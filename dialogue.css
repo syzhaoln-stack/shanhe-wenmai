@@ -180,10 +180,11 @@
   border: 1px solid #b5c8bf;
   border-radius: 8px;
   background: #fff;
-  font: 16px/1.4 inherit;
   font-family: inherit;
   font-size: 16px;
+  line-height: 1.4;
 }
+.course-dialogue .cd-key-input:focus-visible { outline: 2px solid #29746f; outline-offset: 2px; }
 .cd-key-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 9px; }
 .course-dialogue .cd-forget { background: transparent; color: #405e55; padding: 6px 8px; font: inherit; border: 0; }
 .course-dialogue .cd-key-link { color: #2d6255; padding: 5px 0; }
