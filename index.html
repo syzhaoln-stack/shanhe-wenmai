@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src https://api.deepseek.com; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f9f6">
+  <meta name="description" content="辽宁师范大学古代汉语课程研习空间。循着知识图谱、诗文意象和山河地图读原典，与作品中的人物展开对话。">
+  <title>山河文脉 · 古代汉语研习馆</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="museum.css">
+  <link rel="stylesheet" href="dialogue.css">
+  <link rel="stylesheet" href="graph.css">
+  <link rel="stylesheet" href="atlas.css">
+  <link rel="stylesheet" href="companion.css">
+  <script defer src="graph-data.js"></script>
+  <script defer src="course.js"></script>
+  <script defer src="map-data.js"></script>
+  <script defer src="dialogue.js"></script>
+  <script defer src="graph.js"></script>
+  <script defer src="atlas.js"></script>
+  <script defer src="companion.js"></script>
+  <script defer src="museum.js"></script>
+</head>
+<body>
+  <a href="#main" class="skip">跳到正文</a>
+  <header class="mast"><div class="mast-inner">
+    <a class="brand" href="#home" aria-label="山河文脉首页"><img src="assets/mark.svg" alt=""><span>山河文脉</span></a>
+    <nav class="main-nav" aria-label="主导航">
+      <a href="#home">课程总览</a><a href="#graph">知识图谱</a><a href="#imagery">意象研读</a><a href="#atlas">时空地图</a>
+    </nav>
+    <div class="mast-actions"><button class="search-btn" id="search-toggle" aria-label="搜索全站"><i data-icon="search"></i></button><a class="ask-link" href="#dialogue"><i data-icon="spark"></i>问古人</a><button class="menu-btn" id="menu-toggle" aria-label="展开导航" aria-expanded="false"><i data-icon="menu"></i></button></div>
+  </div><nav class="mobile-nav" id="mobile-nav" aria-label="移动导航" hidden><a href="#home">课程总览</a><a href="#graph">知识图谱</a><a href="#imagery">意象研读</a><a href="#atlas">时空地图</a><a href="#resources">课程资料</a></nav></header>
+  <main id="main" tabindex="-1"></main>
+  <footer class="foot"><span><img src="assets/mark.svg" alt="">山河文脉</span><p>辽宁师范大学　·　古代汉语（一）（二）</p><a href="#resources">课程资料 <i data-icon="arrow-up-right"></i></a></footer>
+  <dialog id="search-dialog"><div class="search-head"><i data-icon="search"></i><input id="search-input" placeholder="搜索篇目、意象或知识点" aria-label="搜索篇目、意象或知识点" autocomplete="off"><button id="search-close" class="round" aria-label="关闭搜索"><i data-icon="x"></i></button></div><div class="search-results" id="results"></div></dialog>
+</body>
+</html>
